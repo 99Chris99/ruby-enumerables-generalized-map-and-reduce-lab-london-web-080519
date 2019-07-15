@@ -9,6 +9,7 @@
 #end
 
 def map(array)
+<<<<<<< HEAD
 output_array = []
   n = 0
   while n < array.length
@@ -37,4 +38,13 @@ end
     n += 1
   end
 return aggrigate
+=======
+#output_array = []
+  n = 0
+  while n < array.length
+    array << yield(array[n])
+    n += 1
+  end
+return array
+>>>>>>> 5ad06bf7f642f64978a8254a58e253e9ec9c6be8
 end
